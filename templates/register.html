@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create new account</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/register.css')}}">
+    <script>
+        function reg(){
+            fetch('/register')
+        }
+    </script>
+  </head>
+  <body>
+    <form class="signup-form" action="/register" method="POST">
+            <!-- form header -->
+            <div class="form-header">
+                <h1>CREATE NEW ACCOUNT</h1>
+            </div>
+        
+            <!-- form body -->
+                <div class="form-body">
+            <!-- Firstname and Lastname -->
+            <div class="horizontal-group">
+                <div>
+                    <label for="name" class="label-title">Name:</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required="required" />
+                </div><br>
+            </div><br>
+            
+        <!-- Email and mobile number -->
+        <div class="horizontal-group">
+            <div class="form-group left">
+                <label for="email" class="label-title">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="it should contain @,." required="required" />
+            </div>
+            <div class="form-group right">
+                <label for="phone" class="label-title">Mobile:</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your number" required="required" />
+            </div>
+        </div><br>
+            <!-- Gender -->
+                <div class="horizontal-group">
+                   <div class="form-group left">
+                        <label class="label-title">Gender:</label>
+                            <div class="input-group">
+                                <label for="male">
+                                <input type="radio" name="gender" value="male" id="male"><b>Male</b></label>
+                                <label for="female">
+                                <input type="radio" name="gender" value="female" id="female"><b>Female</b></label>
+                                <label for="Others">
+                                <input type="radio" name="gender" value="others" id="others"><b>Others</b></label>
+                            </div>
+                    </div>
+                    
+                </div>
+            <!-- form footer -->
+                <div class="form-footer">
+                    <span></span>
+                    <button style="float:left" class="btn" onclick={{url_for('login')}}>Back</button>
+                    <button  type="submit" class="btn" onclick="reg()" >Create</button>
+                </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+body 
+{
+  font-family:'Times New Roman', Times, serif; 
+  background-color: #545454; 
+  color:rgb(255, 255, 255);
+}
+.container {
+    display: flex;
+    background-color: #352c2c;
+
+  }
+.container1 {
+    display: grid;
+    text-align: center;
+
+  }
+  .abc{
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+ 
+  .image {
+    flex-basis: 730px;
+    margin-left: 10px;
+    float: left;
+  }
+  .text {
+    font-size: 20px;
+  }
+  button {
+    background-color: #b0b0b0;
+    color: rgb(16, 15, 15);
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 20%;
+    padding-left: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    
+  }

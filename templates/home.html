@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Palfam HOME</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="{{url_for('static',filename='logo.png')}}" width="150" height="150">
+            
+        </div>
+        <div class="text">    
+            <h1> PALFAM </h1>
+        </div>
+    </div><br><br><br><br><br><br>
+    <div class="container1">
+        <div class="abc">
+        <button type="button" style="padding-left: 10px; padding-right: 10px;"><a href="{{url_for('login')}}" style="text-decoration: none;">Login</a></button><br>
+        <button type="button" style="padding-left: 10px; padding-right: 10px;"><a href="{{url_for('register')}}" style="text-decoration: none;">Signup</a></button>
+    </div></div><br>
+    <h1 style= "text-align: ce"> ABOUT</h1>
+    <p style="font-size: 25px; font-family: 'Public sans';">
+        PALFAM uses cloud-based directory to compare the faces captured during account creating for each login or sign up. 
+        This achieves the important security key triad confidentiality. As a Multi-Factor Authentication(MFA) along with face recognition, 
+        we ask the security questions and in additional we send a Timed OTP(TOTP) to users mobile. 
+        The combination of face recognition, security questions and OTP makes a secured application with MFA.
+    </p>

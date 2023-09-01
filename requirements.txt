@@ -1,0 +1,6 @@
+face-recognition
+flask
+flask-sqlalchemy
+opencv-python
+flask_bcrypt
+numpy
